@@ -19,6 +19,7 @@ conn.onopen = function(e) {
 };
 
 conn.onmessage = function(e) {
+  let colors = ["#ce93d8", "#64b5f6", "#4db6ac", "#dce775"]
 
    data = JSON.parse(e.data)
    // user = data.name
@@ -26,6 +27,6 @@ conn.onmessage = function(e) {
    msg = data.msg
 
    const node = document.createElement("p");
-   node.innerHTML = `<b style="color: #fff; background: blue; padding: 3px 5px; border-radius: 2px;">${user}</b>: ${msg}`
+   node.innerHTML = `<b style="color: #000; background-color:${colors[Math.floor(Math.random() * 3)]};  padding: 3px 5px; border-radius: 2px;">${user}</b>: ${msg}`
   msgs.appendChild(node)
 };
