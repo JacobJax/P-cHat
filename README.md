@@ -14,7 +14,8 @@ Simple PHP-Rachet chat web app.
 
 ## Installation
 
-1. Run `https://github.com/JacobJax/P-cHat.git` or download .zip file.
-1. Start server (xampp/wampp/mampp)
-1. Run `php src/server.php`
-1. Open `index.html` file in different browsers.
+1. Run `git clone https://github.com/JacobJax/P-cHat.git` or download .zip file.
+2. Run `composer install` to install packages
+3. Start server (xampp/wampp/mampp)
+4. Run `php src/server.php`
+5. Open `index.html` file in different browsers.
