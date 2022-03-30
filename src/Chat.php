@@ -16,7 +16,7 @@ class Chat implements MessageComponentInterface {
 
       echo "New connection! ({$conn->resourceId})\n";
       foreach ($this->clients as $client) {
-         $client->send("Another fag joined the chat");
+         $client->send(json_encode(["name"=>"[chat]", "msg"=>"Another fag joined the chat"]));
       }
    }
 
